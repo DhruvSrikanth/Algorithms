@@ -1,3 +1,4 @@
+# O (n^2) Time Complexity
 def ins_sort(arr):
     for j in range(1,len(arr)):
         key = arr[j]
