@@ -1,4 +1,5 @@
-# Time complexity - O(TODO)
+# Time complexity - Best case - O(n log n), Worse case - O (n^2)
+
 # This is an in-place sort like insertion sort
 
 from partition import partition
