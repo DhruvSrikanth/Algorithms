@@ -11,5 +11,5 @@ def randomized_partition(A,p,r):
 def randomized_quicksort(A,p,r):
     if p < r:
         q = randomized_partition(A,p,r) # get the index of the boundary which splits array into two left and right sorted arrays
-        quicksort(A,p,q-1) # elements to the left of the partition
-        quicksort(A,q+1,r) # elements to the right of the partition
+        randomized_quicksort(A,p,q-1) # elements to the left of the partition
+        randomized_quicksort(A,q+1,r) # elements to the right of the partition
