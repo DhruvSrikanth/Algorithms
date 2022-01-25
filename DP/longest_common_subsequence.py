@@ -1,6 +1,17 @@
-# Time complexity is normally O(2^n) but with dp becomes O(n)
+# Time complexity is normally O(2^(m+n)) but with dp becomes O(m*n)
 
-def lcs(X , Y):
+def lcs(X, Y):
+    m = len(X)
+    n = len(Y)
+    if m == 0 or n == 0:
+        return 0
+    else:
+        if X[m] == Y[n]:
+            return 1 + lcs(X[:-1], Y[:1])
+        else:
+            return max(lcs(X[:-1],Y), lcs(X, Y[:-1]))
+
+def lcs_dp(X , Y):
     m = len(X)
     n = len(Y)
  
@@ -24,4 +35,4 @@ def lcs(X , Y):
  
 X = "AGGTAB"
 Y = "GXTXAYB"
-print ("Length of LCS is ", lcs(X, Y) )
+print("Length of LCS is ", lcs_dp(X, Y))
