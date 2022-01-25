@@ -1,4 +1,4 @@
-# Time complexity is O(2^n) so we use dp to reduce to linear time O(n)
+# Time complexity is O(2^n) so we use dp to reduce to linear time O(n*W)
 
 # Program for 0-1 Knapsack problem
 # Returns the maximum value that can 
