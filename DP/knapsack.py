@@ -1,7 +1,11 @@
 # Time complexity is O(2^n) so we use dp to reduce to linear time O(n*W)
 # NP Complete Problem - Problems that have no solution in polynomial time
 
-# 0-1 Knapsack problem
+# Problem: 0-1 Knapsack problem
+# Restriction: The weights and weight limit are positive integers
+# Result: Algorithm can be made to run in polynomial time instead of exponential
+# Reason: Each position in our table can be an instance of the knapsack problem with different input which can be indexed by w (only possible when weights w are integers meaning W is also an integer)
+
 def knapsack(W, wt, val, n):
     K = [[0 for x in range(W + 1)] for x in range(n + 1)]
   
