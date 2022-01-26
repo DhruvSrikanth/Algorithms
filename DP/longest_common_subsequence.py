@@ -1,4 +1,4 @@
-# Time complexity is normally O(2^(m+n)) but with dp becomes O(m*n)
+# Time complexity is normally O(m*n*2^(m+n)) but with dp becomes O(m*n)
 
 def lcs(X, Y):
     m = len(X)
