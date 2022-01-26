@@ -1,8 +1,7 @@
 # Time complexity is O(2^n) so we use dp to reduce to linear time O(n*W)
+# NP Complete Problem - Problems that have no solution in polynomial time
 
-# Program for 0-1 Knapsack problem
-# Returns the maximum value that can 
-# be put in a knapsack of capacity W
+# 0-1 Knapsack problem
 def knapsack(W, wt, val, n):
     K = [[0 for x in range(W + 1)] for x in range(n + 1)]
   
