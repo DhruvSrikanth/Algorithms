@@ -30,3 +30,32 @@ def lcs_dp(X , Y):
 X = "AGGTAB"
 Y = "GXTXAYB"
 print("Length of LCS is ", lcs_dp(X, Y))
+
+
+
+
+'''
+
+Proof of correctness:
+
+We will use a proof by strong induction on length.
+
+Basis - 
+
+i = 0 or j = 0, meaning C[i,j] = 0, where C[i,j] provides the length of the longest subsequence for the given strings till i and j respectively.
+
+This completes our basis step.
+
+Inductive Step - 
+IH - Assume claim on C[i',j'] providing the length of the longest subsequence for i' and j' is true for i' + j' < i + j.
+
+Let Z be the LCS of X[1..i], Y[1..j].
+Case 1 - If X[i] = Y[j], then the previous Z that had X[i]= Y[j], so C[i-1,j-1] + 1 is the new LCS. We know by the IH C[i-1,j-1] is correct therefore, our new LCS is correct.
+
+Case 2 - When X[i] is not equal to Y[j], then the new LCS does not change from the old one, therefore, we take the max of C[i-1,j] and C[i,j-1]. By the IH, we know that C[i-1,j] and C[i,j-1] are correct.
+
+This completes our inductive step.
+
+Therefore, by strong induction on the length, we have shown that our algorithm is correct.
+
+'''
