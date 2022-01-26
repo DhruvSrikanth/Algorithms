@@ -7,7 +7,7 @@ def lcs(X, Y):
         return 0
     else:
         if X[m] == Y[n]:
-            return 1 + lcs(X[:-1], Y[:1])
+            return 1 + lcs(X[:-1], Y[:-1])
         else:
             return max(lcs(X[:-1],Y), lcs(X, Y[:-1]))
 
