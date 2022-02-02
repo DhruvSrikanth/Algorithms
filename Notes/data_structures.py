@@ -46,6 +46,17 @@ Data Structures:
        -> Empty
        -> Consists of a node called the root
        -> Order matters
+    -> each node x contains -
+       -> three pointers: Left[x] (left child), Right[x] (right child), p[x] (parent)
+       -> root[T] points to the root of the tree. p[root[T]] = NIL
+    -> Property - invariant (this is what makes it a binary search tree)
+    -> for any nodes x:
+         for all nodes y in left subtree of x:
+           key[y] <= key[x]
+         for all nodes y in right subtree of x:
+           key[y] >= key[x]
+
+         
 
 
 
