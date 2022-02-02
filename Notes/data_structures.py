@@ -32,6 +32,10 @@ Data Structures:
        -> min heap property - 
           -> key(Parent(i)) <= key(i) (Ordering constraint), for all i > 1
           -> A[Parent(i)] <= A[i]
+        -> Operations that can be performed - 
+           -> Insert - # of comparisons O (lg n)
+           -> Decrease-key
+
 
 
 
