@@ -30,7 +30,7 @@ Data Structures:
           -> right child (i) 2i + 1 (index of the right child)
        -> This shows us the indices. What about the data?
        -> min heap property - 
-          -> key(Parent(i)) <= key(i) (Ordering constraint)
+          -> key(Parent(i)) <= key(i) (Ordering constraint), for all i > 1
           -> A[Parent(i)] <= A[i]
 
 
