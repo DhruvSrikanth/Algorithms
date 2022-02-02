@@ -1,4 +1,4 @@
-# Time complexity - O (n)
+# Time complexity - O (h) where h is the height of the tree
 
 def search(root,key):
      
