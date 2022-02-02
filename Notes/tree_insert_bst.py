@@ -1,3 +1,6 @@
+# Time complexity of - O (h), h is the height of the tree
+# We are assuming that the pointer manipulation is in constant time and it is
+
 class Node:
     def __init__(self, val):
         self.data = val
