@@ -34,7 +34,7 @@ Data Structures:
           -> A[Parent(i)] <= A[i]
         -> Operations that can be performed - 
            -> Insert - # of comparisons O (lg n)
-           -> Decrease-key
+           -> Decrease-key - O (lg n)
 
 
 
