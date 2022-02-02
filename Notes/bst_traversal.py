@@ -1,3 +1,5 @@
+# Time complexity - O (n) since we visit each node once
+
 class Node:
     def __init__(self, key):
         self.left = None
