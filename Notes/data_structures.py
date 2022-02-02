@@ -40,4 +40,13 @@ Data Structures:
 
 
 
+
+    4. Binary Search Tree (BST) - 
+    -> Rooted Binary Trees - 
+       -> Empty
+       -> Consists of a node called the root
+       -> Order matters
+
+
+
 '''
