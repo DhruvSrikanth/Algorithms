@@ -55,6 +55,9 @@ Data Structures:
            key[y] <= key[x]
          for all nodes y in right subtree of x:
            key[y] >= key[x]
+    -> Advantages over hash tables - 
+       -> You can get the closet neighbours through BSTs but not through a hashtable
+       -> BSTs preserve the complete ordering but hash tables do not
 
          
 
