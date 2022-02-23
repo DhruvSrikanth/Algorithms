@@ -41,6 +41,13 @@ Proof:
     -> We know that w(e) <= w(e') therefore, w(T') <= w(T) by substituting w(e) in the previous equation
     -> Since T is a minimum spanning tree, w(T') = w(T)
 
+Cycle Property:
+    -> 
+
+Theorem (Using Cyclce Property):
+    -> Let G = (V,E) be a connected undirected weighted graph.
+    -> Let C be a cycle in G. Let e = (u,v) be a max weighted edge on C.
+    -> Then e does not belong to some mst of G.
 
 
 
