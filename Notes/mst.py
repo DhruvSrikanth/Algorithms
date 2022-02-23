@@ -30,5 +30,17 @@ Cut Property:
 Theorem (Using Cut Property):
     -> For any cut (S, V - S) in a connected undirected weighted graph G = (V,E,w), any least-weight edge  e=(u,v) crossing the cut where u belongs to S and v belongs to V - S is in some MST of G.
 
+Proof:
+    -> Let T be an MST of G. If T contains e = (u,v), the theorem has be proved. 
+    -> If not, then since T is a tree, there exists a unique path between any two vertices in T in particular between u and v. Since u is in S and v is in V - S, this path contains some edge e'=(x,y) with x in S and y in V - S.
+    -> If you add edge e = (u,v), this path and e form a cycle T Union {e}
+    -> If you remove edge e', then the result is T - e' Union {e}
+    -> T' = T - {(x,y)} Union {(u,v)} is a spanning tree
+
+
+
+
+
+
 
 '''
