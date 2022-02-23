@@ -36,6 +36,10 @@ Proof:
     -> If you add edge e = (u,v), this path and e form a cycle T Union {e}
     -> If you remove edge e', then the result is T - e' Union {e}
     -> T' = T - {(x,y)} Union {(u,v)} is a spanning tree
+    -> T' must have the same weight as T
+    -> w(T') = w(T) - w(e') + w(e)
+    -> We know that w(e) <= w(e') therefore, w(T') <= w(T) by substituting w(e) in the previous equation
+    -> Since T is a minimum spanning tree, w(T') = w(T)
 
 
 
