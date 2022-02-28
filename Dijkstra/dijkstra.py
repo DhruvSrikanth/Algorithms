@@ -1,5 +1,6 @@
 # Time Complexity - O (E log V) using heap
 
+
 import heapq as heap
 
 def dijkstra(G, root):
@@ -43,6 +44,23 @@ G = {1:{2:4,
         6:3},
      6:{3:1,
         5:3}}
-p, d = dijkstra(G, 1)
+
+source = 1
+p, d = dijkstra(G, source)
 print(p)
 print(d)
+
+def backtrack(parent, target):
+    path = "{}".format(target)
+    while True:
+        step = p[target]
+        path += ("-" + str(step))
+        if step == source:
+            break
+        target = step
+    return path[::-1]
+
+target = 4
+path = backtrack(parent, target)
+print(path)
+
