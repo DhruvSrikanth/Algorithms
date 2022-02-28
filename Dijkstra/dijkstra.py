@@ -46,21 +46,21 @@ G = {1:{2:4,
         5:3}}
 
 source = 1
-p, d = dijkstra(G, source)
-print(p)
-print(d)
+parent, distance = dijkstra(G, source)
+prin("Parent Dictionary - ", parent)
+print("Distance Dictionary - ", distance)
 
 def backtrack(parent, target):
     path = "{}".format(target)
     while True:
-        step = p[target]
-        path += ("-" + str(step))
+        step = parent[target]
+        path += (" >- " + str(step))
         if step == source:
             break
         target = step
     return path[::-1]
 
-target = 4
+target = 5
 path = backtrack(parent, target)
-print(path)
-
+print("Path from {} to {} is {} and the cost is {}.".format(source, target, path, distance[target]))
+    t
