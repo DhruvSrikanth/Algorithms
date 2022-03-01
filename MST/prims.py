@@ -1,15 +1,15 @@
 # Time Complexity - O (E log V)
 
-import heapq
+import heapq as heap
 
 def prims(graph, root):
     mst = {}
     visited = set([root])
     pq = [(w, root, d) for d, w in graph[root].items()]
-    heapq.heapify(pq)
+    heap.heapify(pq)
     
     while pq:
-        w, s, d = heapq.heappop(pq)
+        w, s, d = heap.heappop(pq)
         if d not in visited:
             visited.add(d)
             if s not in mst:
@@ -17,7 +17,7 @@ def prims(graph, root):
             mst[s].add(d)
             for u, w in graph[d].items():
                 if u not in visited:
-                    heapq.heappush(pq, (w, d, u))
+                    heap.heappush(pq, (w, d, u))
     return mst
 
 graph = {
