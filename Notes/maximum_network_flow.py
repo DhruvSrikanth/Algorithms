@@ -9,6 +9,9 @@ Greedy Algorithm to find the maximum flow in a network:
     3. Assign f(e) = c(p) for all edges e on path
     4. Repeat until no directed s-t path remains in G.
 
+This fails however.
+
+An edge (u,v) is called saturated if f(u,v) = c(u,v).
 
 
 
